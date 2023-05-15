@@ -1,0 +1,53 @@
+#cursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    background-color: #039c6e62;
+    padding: 12px;
+}
+main{
+    width: 100%;
+}
+
+.card{
+    width:200px;
+    height: 100px;
+    box-shadow: 2px 2px #7a8caa;
+    font-size: small;
+    background-color: #fff;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 4px;
+}
+
+.card span i{
+    font-size: x-large;
+}
+
+@media screen and (min-width: 1023px) {
+
+    .menu-item:hover{
+        background-color: #ffaf36a8;
+    }
+    .menu-item a:hover{
+        color: #0fad86dc;
+    }
+    main{
+        max-width: 100%;
+    }
+
+    #cursos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+    }
+
+    .card:hover{
+        transition: all .6s;
+        transform:scale(1.5);
+    }
+    footer{
+        margin-bottom: 0px;
+    }
+}
