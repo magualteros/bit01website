@@ -24,6 +24,11 @@ main{
 .card span i{
     font-size: x-large;
 }
+@media screen and (min-width: 768px) {
+    footer{
+        margin-bottom: 0px;
+    }
+}
 
 @media screen and (min-width: 1023px) {
 
