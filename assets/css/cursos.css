@@ -24,13 +24,17 @@ main{
 .card span i{
     font-size: x-large;
 }
+
+footer{
+    margin-bottom: 0px;
+}
 @media screen and (min-width: 768px) {
     footer{
         margin-bottom: 0px;
     }
 }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
 
     .menu-item:hover{
         background-color: #ffaf36a8;
@@ -49,8 +53,8 @@ main{
     }
 
     .card:hover{
-        transition: all .6s;
-        transform:scale(1.5);
+        transition: all .5s;
+        transform:scale(1.2);
     }
     footer{
         margin-bottom: 0px;

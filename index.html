@@ -72,59 +72,61 @@
     </main>
     <aside>
         <h2>Dejanos tus datos</h2>
-        <form>
+        <form id="formulario" >
             <label>
                 Nombre: 
             </label>
-            <input type="text">
+            <input type="text" id="name" required>
             <label>
                 Email: 
             </label>
-            <input type="email" >
+            <input type="email" id="email" required>
             <label>
                 Teléfono: 
             </label>
-            <input type="tel" >
-            <button>
+            <input type="tel" id="tel" required>
+            <button id="btnsend">
                 ENVIAR
             </button>
         </form>
+        <p id="confirmar"></p>
 
         <div class="coment-container">
             <h2>Comentarios de nuestros alumnos</h2>
             <div class="coment">
-                <figure>
-                    <img src="./assets/images/perfil1.jpg" alt="">
-                    <figcaption>@user</figcaption>
-                </figure>
-                <p>La major institución   </p>
+                    <div class="img-coment">
+                        <img src="./assets/images/perfil1.jpg" alt="">
+                        <figcaption>@user</figcaption>
+                    </div>
+
+                <p>La mejor institución   </p>
             </div>
             <div class="coment">
-                <figure>
+                <div class="img-coment">
                     <img src="./assets/images/perfil2.jpg" alt="">
                     <figcaption>@user</figcaption>
-                </figure>
+                </div>
                 <p>Horarios flexibles    </p>
             </div>
             <div class="coment">
-                <figure>
+                <div class="img-coment">
                     <img src="./assets/images/perfil1.jpg" alt="">
                     <figcaption>@user</figcaption>
-                </figure>
+                </div>
                 <p>Cursos basicos de todo</p>
             </div>
             <div class="coment">
-                <figure>
+                <div class="img-coment">
                     <img src="./assets/images/perfil1.jpg" alt="">
                     <figcaption>@user</figcaption>
-                </figure>
+                </div>
                 <p>Facilidades de pago</p>
             </div>
             <div class="coment">
-                <figure>
+                <div class="img-coment">
                     <img src="./assets/images/perfil2.jpg" alt="">
                     <figcaption>@user</figcaption>
-                </figure>
+                </div>
                 <p>Instructures calificados</p>
             </div>
         </div>
@@ -144,5 +146,6 @@
             <li><a href="#">Partners</a></li>
         </ul>
     </footer>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
