@@ -1,28 +1,75 @@
+main{
+    width: 100%;
+    height:auto;
+}
+
+#search label{
+   color: #000;
+}
+#search input{
+    border: 2px solid #000;
+    border-radius: 5px;
+    color:#000;
+}
+
+
 #cursos{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
     background-color: #039c6e62;
-    padding: 12px;
-}
-main{
-    width: 100%;
+    padding: 10px;
 }
 
 .card{
-    width:200px;
-    height: 100px;
-    box-shadow: 2px 2px #7a8caa;
+    display: flex;
+    position: relative;
     font-size: small;
-    background-color: #fff;
     object-fit: cover;
     overflow: hidden;
-    padding: 4px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px 5px 0px 0;
+    width: 250px;
+    height: 150px;
+    background-color: #fff;
+}
+.content-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-card picture{
+    width: 50px;
+    height: 50px;
+}
+.content-card picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
 }
 
+.card::before{
+    content:"";
+    background-color: #456782;
+    position: absolute;
+    width: 100%;
+    height:50%;
+    border-radius: 5px 5px 0px 0;
+}
+
+.car span, 
+.card div, 
+.card span i{
+    z-index: 3;
+}
 .card span i{
     font-size: x-large;
+    z-index: 3;
 }
 
 footer{
