@@ -12,7 +12,6 @@ main{
     color:#000;
 }
 
-
 #cursos{
     display: flex;
     flex-wrap: wrap;
@@ -40,15 +39,13 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 3;
 }
 .content-card picture{
     width: 50px;
     height: 50px;
 }
 .content-card picture img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     border-radius: 50%;
     border: 2px solid #fff;
 }
@@ -62,33 +59,11 @@ main{
     border-radius: 5px 5px 0px 0;
 }
 
-.car span, 
-.card div, 
-.card span i{
-    z-index: 3;
-}
-.card span i{
-    font-size: x-large;
-    z-index: 3;
-}
-
 footer{
     margin-bottom: 0px;
 }
-@media screen and (min-width: 768px) {
-    footer{
-        margin-bottom: 0px;
-    }
-}
 
 @media screen and (min-width: 1024px) {
-
-    .menu-item:hover{
-        background-color: #ffaf36a8;
-    }
-    .menu-item a:hover{
-        color: #0fad86dc;
-    }
     main{
         max-width: 100%;
     }
@@ -102,8 +77,5 @@ footer{
     .card:hover{
         transition: all .5s;
         transform:scale(1.2);
-    }
-    footer{
-        margin-bottom: 0px;
     }
 }
