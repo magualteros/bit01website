@@ -32,8 +32,7 @@ $btnsend.addEventListener('click', (e) => {
 
         $formulario.reset();
     } else {
-        $confirmar.innerText = '❌ complete todos los campos'
+        $confirmar.innerText = '❌ Complete todos los campos';
     }
     e.preventDefault();
-
 });

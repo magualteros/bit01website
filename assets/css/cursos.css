@@ -3,10 +3,10 @@ main{
     height:auto;
 }
 
-#search label{
+#section-search label{
    color: #000;
 }
-#search input{
+#section-search input{
     border: 2px solid #000;
     border-radius: 5px;
     color:#000;

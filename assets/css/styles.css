@@ -5,13 +5,13 @@
     list-style: none;
     box-sizing: border-box;
     /* Color Theme Swatches in Hex */
---color-azul: #3D4073; 
---color-black: #1A1E26; 
---color-gris:#d7dbdd;
+--color-azul:#3D4073; 
+--color-azul2:#35278C; 
+--color-azul3:#5155A6; 
+--color-black:#1A1E26; 
+--color-gris: #d7dbdd;
 --color-blanco:#fff;
---color-azul2: #35278C; 
---color-azul3: #5155A6; 
---color-verde: #022623; 
+--color-verde: #022623;
 --color-aguaMarina: #89D9D1; 
 --color-naranja: #BF8665; 
 }
@@ -50,8 +50,7 @@ h3{
     width: 60px;
     height: 30px;
 }
-.logo  img{
-
+.logo img{
     border-radius: 8px;
 }
 .menu{
