@@ -51,6 +51,7 @@ function sendMessage(message,contenedor) {
     $message.style.color = 'darkred';
     $message.style.backgroundColor = 'gray';
     contenedor.appendChild($message);
+
     const timer = () => {
         let secondsTime = 3;
         const time = setInterval(() => {
