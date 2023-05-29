@@ -15,9 +15,10 @@ $btnClose.addEventListener('click', () => {
 });
 //* variables del formulario de login */
 
+const $flogin = document.getElementById('form-login');
 const $logCorreo = document.getElementById('login-correo');
 const $logPassword = document.getElementById('login-password');
-const $show2 = document.getElementsByClassName('show');
+const $see = document.getElementById('see');
 
 //* constantes del formulario de registro */
 
@@ -157,10 +158,44 @@ const log = {
 
 $logCorreo.addEventListener('change', (e) => {
     if (isEmail($logCorreo.value)) {
+        $logCorreo.style.boxShadow = '';
         log.logEmail = e.target.value;
     } else {
-        $mail.style.boxShadow = '0 1px red';
+        $logCorreo.style.boxShadow = '0 1px red';
         message = 'Correo no valido';
-        sendMessage(message,$show2);
+        sendMessage(message,$see);
     }
  });
+
+ $logPassword.addEventListener('change', (e) => {
+    if (isPass($logPassword.value)) {
+        $logPassword.style.boxShadow = '';
+        log.logPass = e.target.value;
+    } else {
+        $logPassword.style.boxShadow = '0 1px red';
+        message = 'la contraseña debe contener mayúsculas, minúsculas,números y minimo 8 caracteres';
+        sendMessage(message,$see);
+    }
+});
+
+$flogin.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!log.logEmail || !log.logPass) {
+        message = 'Complete todos los campos';
+        sendMessage(message,$see);
+    } else {
+        const $modal = document.getElementById('modal');
+        $modal.classList.add('active');
+        $modal.style.backgroundColor = 'gray';
+        const $close = document.createElement('button');
+        $close.innerText = 'X';
+        $close.classList.add('btnClose');
+        $close.addEventListener('click', () => {
+            console.log('click cerrar');
+            $modal.style.display = 'none';
+        });
+        $modal.innerText = `Bienvenido ${log.logEmail} `;
+        $modal.appendChild($close);
+        window.location.replace('http://127.0.0.1:5500/bit01website/index.html');
+    }
+});

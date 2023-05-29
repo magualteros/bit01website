@@ -233,10 +233,6 @@ main{
     border-radius: 8px;
 }
 
-#s-registro button{
-
-}
-
 .submit{
     background-color: var(--color-principal);
     border: var(--color-secundario);
