@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/cursos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <title>Cursos</title>
+    <title>AprendeYA/Cursos</title>
 </head>
 <body>
     <header>
@@ -18,13 +17,14 @@
             <picture class="logo">
                 <img src="./assets/images/logo.png" alt="logo">
             </picture>
-            <label for="movil-menu" class="movil-menu">
+            <button id="movil-menu">
                 <i class="fa-solid fa-bars"></i>
-            </label>
-            <input type="checkbox" id="movil-menu">
-            <ul class="menu">
+            </button>
+            <ul class="menu" id="menu">
+                <button id="btnClose">X</button>
                 <li class="menu-item"><a href="./index.html">Inicio</a></li>
                 <li class="menu-item"><a href="./cursos.html">Cursos</a></li>
+                <li class="menu-item"><a href="./registro.html">Registro</a></li>
             </ul>
         </nav>
     </header>
@@ -35,6 +35,9 @@
                 <input type="search" id="search">
                 <button id="btnsearch"><i class="fa-solid fa-magnifying-glass"></i></button>
             </span>
+            <div id="show">
+
+            </div>
         </section>
         <section id="cursos">
         </section>
@@ -51,5 +54,6 @@
             <li><a href="#">Partners</a></li>
     </footer>
     <script src="./assets/js/cursos.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>

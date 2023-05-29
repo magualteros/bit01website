@@ -4,6 +4,20 @@ const $email = document.getElementById('email');
 const $tel = document.getElementById('tel');
 const $btnsend = document.getElementById('btnsend');
 const $confirmar = document.getElementById('confirmar');
+const $btnMenu = document.getElementById('movil-menu');
+const $btnClose = document.getElementById('btnClose');
+const $menu = document.getElementById('menu');
+
+
+$btnMenu.addEventListener('click', () => {
+    console.log('abrio menu');
+    $menu.classList.add('active') ;
+});
+$btnClose.addEventListener('click', () => {
+    console.log('click en X');
+    $menu.classList.remove('active');
+});
+
 
 let user = {
     nameUser : null,

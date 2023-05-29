@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/registro.css">
+    <title>AprendeYA/Registro</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <picture class="logo">
+                <img src="./assets/images/logo.png" alt="logo">
+            </picture>
+            <button id="movil-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="menu" id="menu">
+                <button id="btnClose">X</button>
+                <li class="menu-item"><a href="./index.html">Inicio</a></li>
+                <li class="menu-item"><a href="./cursos.html">Cursos</a></li>
+                <li class="menu-item"><a href="./registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="s-main">
+
+            <section id="modal">
+
+            </section>
+            <input type="radio" name="forms" id="registro">
+            <input type="radio" name="forms" id="login">
+            <div id="labels">
+                <label for="registro" id="l-registro">Registrarse</label>
+                <label for="login" id="l-login">Iniciar sesión</label>
+            </div>
+            <section id="s-registro">
+                <form id="form-registro">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id="name">
+                    <label for="">Correo</label>
+                    <input type="email" id="email">
+                    <label for="">Teléfono</label>
+                    <input type="number" id="tel">
+                    <label for="">Contraseña</label>
+                    <input type="password" id="password">
+                    <label for="">Confirmar Contraseña</label>
+                    <input type="password" id="confirm-password">
+                    <button type="submit" class="submit">Registrarse</button>
+                    <button type="reset" class="reset">Limpiar</button>
+                    <div id="show"></div>
+                </form>
+            </section>
+            <section id="s-login">
+                <form >
+                    <label for="login-correo">Correo</label>
+                    <input type="email" id="login-correo">
+                    <label for="">Contraseña</label>
+                    <input type="password" id="login-password">
+                    <button type="submit" class="submit">Ingresar</button>
+                    <button type="reset" class="reset">Cancelar</button>
+                    <div class="show"></div>
+                </form>
+        </section>
+        </section>
+    </main>
+    <script src="./assets/js/registro.js"></script>
+</body>
+</html>

@@ -1,5 +1,7 @@
+'use strict';
 const $search = document.getElementById('search');
 const $btnSearch = document.getElementById('btnsearch');
+const $show = document.getElementById('show');
 
 let courses = [
     {
@@ -90,14 +92,75 @@ function mostrarCursos(list) {
     });
 }
 mostrarCursos(courses);
-let search=null;
+let search = null;
+
 $search.addEventListener('change', (e) => {
     search = e.target.value;
-    console.log(search);
 });
 
-$btnSearch.addEventListener('click',searchCourse);
 
-function searchCourse(search) {
+
+function searchCourse() {
+    $show.innerHTML = '';
+    let message = '';
+    function sendMessage(message) {
+        const $message = document.createElement('div');
+        $message.innerText = ''+message;
+        $message.style.color = 'red';
+        $show.appendChild($message);
+        const timer = () => {
+            let secondsTime = 3;
+            const time = setInterval(() => {
+                secondsTime--;
+                if (secondsTime === 0) {
+                    $message.style.display = 'none';
+                    clearInterval(time);
+                };
+            }, 1000);
+        };
+        timer();
+    }
+    if (!search) {
+        message = '❌ Ingrese alguna palabra';
+        sendMessage(message);
+    } else {
+        const result = courses.find((curso) => curso.titulo == search);
+        if (!result) {
+            message = 'No tenemos cursos de este tema 😕';
+            sendMessage(message);
+        } else {
+            //const $mostrar = document.createElement('section');
+        const $closeCourse = document.createElement('button');
+        $closeCourse.innerText = 'X';
+        $closeCourse.classList.add('btnClose');
+        const $cardSearch = document.createElement('div');
+        $cardSearch.classList.add('card');
+        const $searchContent = document.createElement('div');
+        $searchContent.classList.add('content-card');
+        const $pictureSearch = document.createElement('picture');
+        const $imgSearch = document.createElement('img');
+        $imgSearch.setAttribute('src', result.imagen);
+        const $titleSearch = document.createElement('h2');
+        $titleSearch.innerText = '' + result.titulo;
+        const $desSearch = document.createElement('p');
+        $desSearch.innerText = '' + result.descripción;
+
+        $closeCourse.addEventListener('click', () => {
+            console.log('click cerrar');
+            $cardSearch.style.display = 'none';
+        });
+
+        $pictureSearch.appendChild($imgSearch);
+        $searchContent.appendChild($closeCourse);
+        $searchContent.appendChild($pictureSearch);
+        $searchContent.appendChild($titleSearch);
+        $searchContent.appendChild($desSearch);
+        $cardSearch.appendChild($searchContent);
+        $show.appendChild($cardSearch);
+        }
+        
+    }
     
 }
+
+$btnSearch.addEventListener('click',searchCourse);
