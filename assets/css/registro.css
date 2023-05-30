@@ -198,18 +198,26 @@ main{
     backdrop-filter: blur(50px);
     flex-direction: column;
     align-items: center;
-    width: 70%;
-    height: 300px;
-    padding: 10px 6px;
-    position: relative;
-    width: 250px;
+    justify-content: center;
+    width: max-content;
     height: max-content;
+    padding: 10px 6px;
+    box-shadow: 2px 2px 2px 0 var(--color-black);
+    position: relative;
 }
 
-#s-registro input{
+form{
+    padding: 0 24px;
+}
+
+#s-registro input, #s-login input{
     display: block;
     outline: none;
     padding: 6px;
+    margin: 6px 0;
+}
+
+#s-registro input{
     color: var(--color-white);
     border: 1px solid var(--color-complemento);
     border-radius: 8px;
@@ -217,9 +225,6 @@ main{
 }
 
 #s-login input{
-    display: block;
-    outline: none;
-    padding: 6px;
     color: var(--color-white);
     border: 1px solid var(--color-white);
     border-radius: 8px;
@@ -227,22 +232,19 @@ main{
 }
 
 #s-registro button, #s-login button{
-    margin-top: 12px;
+    margin: 12px  0;
     width: 80px;
     height: 30px;
     border-radius: 8px;
+    box-shadow: 1px 1px var(--color-white);
+    color: var(--color-white);
 }
 
 .submit{
     background-color: var(--color-principal);
     border: var(--color-secundario);
-    box-shadow: 1px 1px var(--color-white);
-    color: white;
 }
 
 .reset{
     background-color: var(--color-secundario);
-    box-shadow: 1px 1px var(--color-white);
-    color: white;
 }
-

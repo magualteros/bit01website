@@ -102,7 +102,6 @@ $tel.addEventListener('change', (e) => {
 $password.addEventListener('change', (e) => {
     if (isPass($password.value)) {
         $password.style.boxShadow = '';
-        user.userPassword = e.target.value;
     } else {
         $password.style.boxShadow = '0 1px red';
         message = 'la contraseña debe contener mayúsculas, minúsculas,números y minimo 8 caracteres';
@@ -131,7 +130,7 @@ $fRegistro.addEventListener('submit', (e) => {
     e.preventDefault();
     if (!user.userName || !user.userMail || !user.userTel || !user.userPassword) {
         message = 'Complete todos los campos';
-        sendMessage(message);
+        sendMessage(message,$show);
     } else {
         const $modal = document.getElementById('modal');
         $modal.classList.add('active');
