@@ -148,9 +148,9 @@ $fRegistro.addEventListener('submit', (e) => {
             console.log('click cerrar');
             $modal.style.display = 'none';
         });
-        $modal.innerText = `Bienvenido a esta gran familia, ${user.userName}, nos contactaremos contigo para hacer seguimiento mediante el correo ${user.userMail} o al teléfono ${user.userTel} `;
+        $modal.innerText = `Bienvenido a esta gran familía, ${user.userName}, nos contactaremos contigo para hacer seguimiento mediante el correo ${user.userMail} o al teléfono ${user.userTel} `;
         $modal.appendChild($close);
-        window.location.replace('http://127.0.0.1:5500/bit01website/cursos.html');
+        window.location.replace('/bit01website/cursos.html');
     }
 });
 
@@ -204,6 +204,6 @@ $flogin.addEventListener('submit', (e) => {
         });
         $modal.innerText = `Bienvenido ${log.logEmail} `;
         $modal.appendChild($close);
-        window.location.replace('http://127.0.0.1:5500/bit01website/index.html');
+        window.location.replace('/bit01website/index.html');
     }
 });

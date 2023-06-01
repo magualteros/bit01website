@@ -6,62 +6,62 @@ let course = null;
 let courses = [
     {
         titulo: 'gitHub',
-        imagen: 'http://127.0.0.1:5500/bit01website/assets/images/github.png',
+        imagen: '../images/github.png',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'musica',
-        imagen: 'http://127.0.0.1:5500/bit01website/assets/images/musica.png',
+        imagen: '../images/musica.png',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'fotografia',
-        imagen: 'http://127.0.0.1:5500/bit01website/assets/images/foto.jpg',
+        imagen: '../images/foto.jpg',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'robotica',
-        imagen: 'http://127.0.0.1:5500/bit01website/assets/images/robotica.jpg',
+        imagen: '../images/robotica.jpg',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'react',
-        imagen: 'http://127.0.0.1:5500/bit01website/assets/images/react.png',
+        imagen: '../images/react.png',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'medicina',
-        imagen: 'http://127.0.0.1:5500/bit01website/assets/images/medicina.jpg',
+        imagen: '../images/medicina.jpg',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'python',
-        imagen: 'http://127.0.0.1:5500/bit01website/assets/images/python.png',
+        imagen: '../images/python.png',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'cocina',
-        imagen: 'http://127.0.0.1:5500/bit01website/assets/images/cocina.jpg',
+        imagen: '../images/cocina.jpg',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'personal Trainer',
-        imagen: 'http://127.0.0.1:5500/bit01website/assets/images/trainer.png',
+        imagen: '../images/trainer.png',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'finanzas',
-        imagen: 'http://127.0.0.1:5500/bit01website/assets/images/finanzas.jpg',
+        imagen: '../images/finanzas.jpg',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'logica',
-        imagen: 'http://127.0.0.1:5500/bit01website/assets/images/logica.jpg',
+        imagen: '../images/logica.jpg',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'mecanica',
-        imagen: 'http://127.0.0.1:5500/bit01website/assets/images/mecanica.png',
+        imagen: '../images/mecanica.png',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     }
 ];
