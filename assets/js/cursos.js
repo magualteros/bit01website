@@ -6,7 +6,7 @@ let course = null;
 let courses = [
     {
         titulo: 'gitHub',
-        imagen: 'assets/images/images/github.png',
+        imagen: 'assets/images/github.png',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
