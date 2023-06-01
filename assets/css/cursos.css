@@ -318,6 +318,7 @@ footer a{
     #cursos{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
         gap: 24px;
     }
 

@@ -104,7 +104,10 @@ $password.addEventListener('change', (e) => {
         $password.style.boxShadow = '';
     } else {
         $password.style.boxShadow = '0 1px red';
-        message = 'la contraseña debe contener mayúsculas, minúsculas,números y minimo 8 caracteres';
+        message = `La contraseña debe 
+        contener mayúsculas, 
+        minúsculas,números
+        y minimo 8 caracteres`;
         sendMessage(message,$show);
     }
 });
@@ -116,12 +119,15 @@ $confirmPass.addEventListener('change', (e) => {
             user.userPassword = e.target.value;
         } else {
             $confirmPass.style.boxShadow = '0 1px red';
-            message = 'las contraseñas no coinciden';
+            message = 'Las contraseñas no coinciden';
         sendMessage(message,$show);
         }
     } else {
         $confirmPass.style.boxShadow = '0 1px red';
-        message = 'la contraseña debe contener mayúsculas, minúsculas,números y minimo 8 caracteres';
+        message = `La contraseña debe 
+        contener mayúsculas, 
+        minúsculas,números
+        y minimo 8 caracteres`;
         sendMessage(message,$show);
     }
  });
@@ -144,7 +150,7 @@ $fRegistro.addEventListener('submit', (e) => {
         });
         $modal.innerText = `Bienvenido a esta gran familia, ${user.userName}, nos contactaremos contigo para hacer seguimiento mediante el correo ${user.userMail} o al teléfono ${user.userTel} `;
         $modal.appendChild($close);
-        window.location.replace('http://127.0.0.1:5500/bit01website/index.html');
+        window.location.replace('http://127.0.0.1:5500/bit01website/cursos.html');
     }
 });
 
@@ -172,7 +178,10 @@ $logCorreo.addEventListener('change', (e) => {
         log.logPass = e.target.value;
     } else {
         $logPassword.style.boxShadow = '0 1px red';
-        message = 'la contraseña debe contener mayúsculas, minúsculas,números y minimo 8 caracteres';
+        message = `La contraseña debe 
+        contener mayúsculas, 
+        minúsculas,números
+        y minimo 8 caracteres`;
         sendMessage(message,$see);
     }
 });
