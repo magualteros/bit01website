@@ -6,62 +6,62 @@ let course = null;
 let courses = [
     {
         titulo: 'gitHub',
-        imagen: '../images/github.png',
+        imagen: 'bit01website/assets/images/github.png',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'musica',
-        imagen: '../images/musica.png',
+        imagen: 'bit01website/assets/musica.png',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'fotografia',
-        imagen: '../images/foto.jpg',
+        imagen: 'bit01website/assets/foto.jpg',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'robotica',
-        imagen: '../images/robotica.jpg',
+        imagen: 'bit01website/assets/robotica.jpg',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'react',
-        imagen: '../images/react.png',
+        imagen: 'bit01website/assets/react.png',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'medicina',
-        imagen: '../images/medicina.jpg',
+        imagen: 'bit01website/assets/medicina.jpg',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'python',
-        imagen: '../images/python.png',
+        imagen: 'bit01website/assets/python.png',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'cocina',
-        imagen: '../images/cocina.jpg',
+        imagen: 'bit01website/assets/cocina.jpg',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'personal Trainer',
-        imagen: '../images/trainer.png',
+        imagen: 'bit01website/assets/trainer.png',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'finanzas',
-        imagen: '../images/finanzas.jpg',
+        imagen: 'bit01website/assets/finanzas.jpg',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'logica',
-        imagen: '../images/logica.jpg',
+        imagen: 'bit01website/assets/logica.jpg',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     },
     {
         titulo: 'mecanica',
-        imagen: '../images/mecanica.png',
+        imagen: 'bit01website/assets/mecanica.png',
         descripción:'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
     }
 ];
